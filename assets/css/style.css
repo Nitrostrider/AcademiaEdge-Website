@@ -22,7 +22,6 @@ html {
 body::-webkit-scrollbar {
   width: 8px;
 }
-
 body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
@@ -245,9 +244,23 @@ p {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
 .navdropdown > a:hover {
   color: #fff;
   text-decoration: none;
+}
+/*comment the code out below if dropdown is added*/
+.navdropdown >a:before {
+content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 3px;
+  left: 25px;
+  background-color: #16dd97;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navdropdown-content {
@@ -663,8 +676,11 @@ body, html {
 }
 .breakdown {
   display:none;
+  margin-bottom:40px;
 }
-
+.breakdown li {
+  color:black;
+}
 .coursehelp {
   border-radius: 50px;
   border-style: solid;
@@ -708,7 +724,7 @@ body, html {
 }
 
 @media screen and (max-width: 990px) {
-  .table1 {
+  .limiter1 {
     display: none;
   }
   .breakdown {
@@ -770,7 +786,7 @@ body, html {
   line-height: 1.2;
   font-weight: 500 !important;
   text-align:center;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -808,6 +824,28 @@ body, html {
 }
 .row1 .cell:nth-child(7) {
   width: 16%;
+}
+/*hasMultipleClasses will overide these widths for cells since it only has 6 columns vs 7*/
+.hasMultipleClasses .cell:nth-child(1) {
+  width: 12%;
+}
+
+.hasMultipleClasses .cell:nth-child(2) {
+  width: 17%;
+}
+
+.hasMultipleClasses .cell:nth-child(3) {
+  width: 17%;
+}
+
+.hasMultipleClasses .cell:nth-child(4) {
+  width: 17%;
+}
+.hasMultipleClasses .cell:nth-child(5) {
+  width: 17%;
+}
+.hasMultipleClasses .cell:nth-child(6) {
+  width: 20%;
 }
 
 .table1, .row1 {
@@ -2671,7 +2709,7 @@ Courses--------------
 .coursebutton {
   color: white; 
   border: 2px solid#18d26e;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color:#18d26e;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -2681,6 +2719,11 @@ Courses--------------
 }
 .coursebutton:hover {
   background-color: white;
+  color: #18d26e;
+}
+/*for course pages where <button> is parent element for <a>*/
+.coursebutton a:hover {
+  text-decoration: none;
   color: #18d26e;
 }
 /*how it works button on courses.html and on joinus.html*/

@@ -41,9 +41,10 @@
     #footer .footer-top .footer-links ul li:nth-child(2) {
       color: #4be8b0;
     }
-    #getnavactive > a:nth-child(4) {
-      background-color:#f1f1f1;
-      color:#1acc8d!important;
+
+    #getnavactive>a:nth-child(4) {
+      background-color: #f1f1f1;
+      color: #1acc8d !important;
     }
   </style>
   <!-- js for using same nav and footer code-->
@@ -118,58 +119,109 @@
     <h2>Schedule</h2>
     <p>Course Schedule</p>
   </div>
-  <!--what mobile screen see-->
+
+  <!--
   <div class="container">
     <ul class="w3-ul w3-white w3-center breakdown" data-aos="fade-left">
-      <li class=" w3-padding-16" style="background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">
+      <li class="w3-padding-16" style="background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">
         Quick Breakdown</li>
-      <li class="w3-padding-16">Every Saturday</li>
+      <li class="w3-padding-16" style='background-color:red;'>
+        <p
+          style="padding-bottom:0px;margin-bottom:0px;background-color:green;position:relative;top:0;width:49%;display:inline-block;">
+          Every Saturday</p>
+        <p style="display:inline-block;width:50%;padding-bottom:0px;margin-bottom:0px;">Sup sup sup sup sup sup sup
+          sup sup sup sup sup sup sup sup sup</p>
+      </li>
       <li class="w3-padding-16">Starts February 20<sup>th</sup>, 2021</li>
       <li class="w3-padding-16">Ends May 15<sup>th</sup>, 2021</li>
       <li class="w3-padding-16">Duration of 13 Weeks</li>
       <li class="w3-padding-16">Time (EST): 2:00 - 3:00 PM</li>
-      <li class="w3-padding-16">Lead Teacher: Avinash Valuveri</li>
+      <li class="w3-padding-16">Lead Teacher: Avinash Valuveri and Eamon Mukhopadyay</li>
       <li class="w3-light-grey">
         <a target="_blank" href="https://forms.gle/1jjWFdXNmmsHfb147">
           <button class="coursebutton">Enroll Now!</button>
         </a>
       </li>
     </ul>
+  </div>-->
+
+  <!--what mobile screen see-->
+  <!--the code is very ugly lol i don't expect this to be in place for a long time, this is to act as something we can use temporarily-->
+  <div class="container">
+    <div class="breakdown w3-center">
+      <div class="w3-padding-16"
+        style="grid-area:header; background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">Quick
+        Breakdown</div>
+      <div style="display:grid;grid-template-columns: 1fr 1fr;">
+        <div>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">Wedensday</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">4/14/21-7/7/21</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">13 Weeks</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">6:00-7:00PM EST</p>
+          <p class="w3-light-grey w3-padding-16" style="height:100%;margin-bottom:0px;color:#444444 !important;">Estrella Popoca
+          </p>
+        </div>
+        <div>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">Saturday</p>
+          <p class="w3-padding-16" style="border-bottom:1px solid #ddd;margin-bottom:0px;">2/20/21 - 5/15/21</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">13 Weeks</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16"
+            style='background-color:pink'>2:00-3:00PM EST</p>
+          <p style="margin-bottom:0px;color:#444444 !important;padding-left:25px;padding-right:25px;"
+            class="w3-padding-16 w3-light-grey">Avinash Valuveri and Eamon Mukhopadyay</p>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- what computers see-->
-  <div class="limiter1" data-aos="fade-up" style="margin-bottom: 3%;">
+  <div class="limiter1" data-aos="fade-up">
     <div class="container1-table100">
       <div class="wrap-table100">
         <div class="table1">
 
-          <div class="row1 header" style="font-weight: 600;">
+          <div class="row1 hasMultipleClasses header" style="font-weight: 600;">
             <div class="cell">Every</div>
             <div class="cell">Starts</div>
             <div class="cell">Ends</div>
             <div class="cell">Duration</div>
             <div class="cell">Time (EST)</div>
             <div class="cell">Lead Teachers</div>
-            <div class="cell">Register
-            </div>
           </div>
 
-          <div class="row1">
+          <div class="row1 hasMultipleClasses">
+            <div class="cell" data-title="Every">Wedensday</div>
+            <div class="cell" data-title="Starts">April 14<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Ends">July 7<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Duration">13 Weeks</div>
+            <div class="cell" data-title="Time (EST)">6:00 - 7:00 PM</div>
+            <div class="cell" data-title="Lead Teachers">Estrella Popoca</div>
+            <!--<div class="cell" data-title="Register">
+              <a target="_blank" href="https://forms.gle/PiRGjL44YJm3yfuq8">
+                <button class="coursebutton">Enroll Now!</button>
+              </a>
+            </div>-->
+          </div>
+
+          <div class="row1 hasMultipleClasses">
             <div class="cell" data-title="Every">Saturday</div>
             <div class="cell" data-title="Starts">February 20<sup>th</sup>, 2021</div>
             <div class="cell" data-title="Ends">May 15<sup>th</sup>, 2021</div>
             <div class="cell" data-title="Duration">13 Weeks</div>
             <div class="cell" data-title="Time (EST)">2:00 - 3:00 PM</div>
             <div class="cell" data-title="Lead Teachers">Avinash Valuveri and Eamon Mukhopadyay</div>
-            <div class="cell" data-title="Register">
-              <a target="_blank" href="https://forms.gle/PiRGjL44YJm3yfuq8">
-                <button class="coursebutton">Enroll Now!</button>
-              </a>
-            </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
+
+  <div data-aos="fade-left" style="margin-bottom:40px;margin-top:40px">
+    <button style="position:relative;left:50%;transform:translateX(-50%);" class="coursebutton">
+      <a target="_blank" href="https://forms.gle/PiRGjL44YJm3yfuq8">Enroll Now!</a>
+    </button>
+  </div>
+
   <div class="container">
     <div class="w3-row">
       <div class="w3-col l7"
@@ -211,7 +263,8 @@
           <li class=" w3-padding-16"
             style="background-color:  #4a9cff; color: white; font-size: 32px; font-weight: 600;">Course Information</li>
           <li class="w3-padding-16"><b>13</b> Weeks</li>
-          <li class="w3-padding-16"><b>3</b> Teachers</li>
+          <!--dont need this
+          <li class="w3-padding-16"><b>3</b> Teachers</li>-->
           <li class="w3-padding-16"><b>5</b> Projects</li>
           <li class="w3-padding-16"><b>10-15</b> Students per Class</li>
           <li class="w3-light-grey">
