@@ -245,9 +245,23 @@ p {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
 .navdropdown > a:hover {
   color: #fff;
   text-decoration: none;
+}
+/*comment the code out below if dropdown is added*/
+.navdropdown >a:before {
+content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 3px;
+  left: 25px;
+  background-color: #16dd97;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navdropdown-content {
