@@ -676,9 +676,10 @@ body, html {
 }
 .breakdown {
   display:none;
+  margin-bottom:40px;
 }
 .breakdown li {
-  color:#666666;
+  color:black;
 }
 .coursehelp {
   border-radius: 50px;

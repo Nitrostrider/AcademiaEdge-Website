@@ -118,7 +118,7 @@
     <h2>Schedule</h2>
     <p>Course Schedule</p>
   </div>
-  <!--what mobile screen see-->
+  <!--what mobile screen see
   <div class="container">
     <ul class="w3-ul w3-white w3-center breakdown" data-aos="fade-left">
       <li class=" w3-padding-16" style="background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">
@@ -135,6 +135,45 @@
         </a>
       </li>
     </ul>
+  </div>-->
+
+  <!--what mobile screen see-->
+  <!--the code is very ugly lol i don't expect this to be in place for a long time, this is to act as something we can use temporarily-->
+  <div class="container">
+    <div class="breakdown w3-center">
+      <div class="w3-padding-16"
+        style="grid-area:header; background-color:#4a9cff; color: white; font-size: 32px; font-weight: 600;">Quick
+        Breakdown</div>
+      <div style="display:grid;grid-template-columns: 1fr 1fr 1fr;">
+        <div>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">Sunday</p>
+          <p class="w3-padding-16" style="border-bottom:1px solid #ddd;margin-bottom:0px;">3/14/21 - 6/8/21</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">13 Weeks</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16"
+            style='background-color:pink'>4:00-5:00PM EST</p>
+          <p style="margin-bottom:0px;height:100%;color:#444444 !important;padding-left:25px;padding-right:25px;"
+            class="w3-padding-16 w3-light-grey">Aryaan Singh</p>
+        </div>
+        <div>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">Monday</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">4/12/21-7/5/21</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">13 Weeks</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">7:00-8:00PM EST</p>
+          <p class="w3-light-grey w3-padding-16" style="height:100%;margin-bottom:0px;color:#444444 !important;">
+            Estrella Popoca
+          </p>
+        </div>
+        <div>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">Friday</p>
+          <p class="w3-padding-16" style="border-bottom:1px solid #ddd;margin-bottom:0px;">2/20/21 - 5/15/21</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16">13 Weeks</p>
+          <p style="border-bottom:1px solid #ddd;margin-bottom:0px;" class="w3-padding-16"
+            style='background-color:pink'>2:00-3:00PM EST</p>
+          <p style="margin-bottom:0px;color:#444444 !important;padding-left:25px;padding-right:25px;"
+            class="w3-padding-16 w3-light-grey">Avinash Valuveri and Eamon Mukhopadyay</p>
+        </div>
+      </div>
+    </div>
   </div>
   <!--what computers see-->
   <div class="limiter1" data-aos="fade-up" style="margin-bottom: 3%;">
@@ -142,33 +181,58 @@
       <div class="wrap-table100">
         <div class="table1">
 
-          <div class="row1 header" style="font-weight: 600;">
+          <div class="row1  hasMultipleClasses header" style="font-weight: 600;">
             <div class="cell">Every</div>
             <div class="cell">Starts</div>
             <div class="cell">Ends</div>
             <div class="cell">Duration</div>
             <div class="cell">Time (EST)</div>
             <div class="cell">Lead Teacher</div>
-            <div class="cell">Register</div>
           </div>
 
-          <div class="row1">
+          <div class="hasMultipleClasses row1">
+            <div class="cell" data-title="Every">Sunday</div>
+            <div class="cell" data-title="Starts">March 14<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Ends">June 8<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Duration">13 Weeks</div>
+            <div class="cell" data-title="Time (EST)">4:00 - 5:00 PM</div>
+            <div class="cell" data-title="Lead Teacher">Aryaan Singh</div>
+          </div>
+
+          <div class="hasMultipleClasses row1">
+            <div class="cell" data-title="Every">Monday</div>
+            <div class="cell" data-title="Starts">April 12<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Ends">July 5<sup>th</sup>, 2021</div>
+            <div class="cell" data-title="Duration">13 Weeks</div>
+            <div class="cell" data-title="Time (EST)">7:00 - 8:00 PM</div>
+            <div class="cell" data-title="Lead Teacher">Estrella Popoca</div>
+          </div>
+
+          <div class="hasMultipleClasses row1">
             <div class="cell" data-title="Every">Friday</div>
             <div class="cell" data-title="Starts">February 19<sup>th</sup>, 2021</div>
             <div class="cell" data-title="Ends">May 7<sup>th</sup>, 2021</div>
             <div class="cell" data-title="Duration">12 Weeks</div>
             <div class="cell" data-title="Time (EST)">7:00 - 8:00 PM</div>
             <div class="cell" data-title="Lead Teacher">Shiva Oswal</div>
-            <div class="cell" data-title="Register">
+            <!--<div class="cell" data-title="Register">
               <a target="_blank" href="https://forms.gle/m4BLr62TBYwVq2Tr6">
                 <button class="coursebutton">Enroll Now!</button>
               </a>
-            </div>
+            </div>-->
           </div>
+
         </div>
       </div>
     </div>
   </div>
+
+  <div data-aos="fade-left" style="margin-bottom:40px;margin-top:40px">
+    <button style="position:relative;left:50%;transform:translateX(-50%);" class="coursebutton">
+      <a target="_blank" href="https://forms.gle/m4BLr62TBYwVq2Tr6">Enroll Now!</a>
+    </button>
+  </div>
+
   <div class="container">
     <div class="w3-row">
       <div class="w3-col l7"
@@ -212,13 +276,11 @@
         <ul class="w3-ul w3-white w3-center courseinfo" data-aos="fade-left">
           <li class=" w3-padding-16"
             style="background-color:  #4a9cff; color: white; font-size: 32px; font-weight: 600;">Course Information</li>
-          <li class="w3-padding-16"><b>12</b> Weeks</li>
-          <li class="w3-padding-16"><b>2</b> Teachers</li>
+          <li class="w3-padding-16"><b>12-13</b> Weeks</li>
           <li class="w3-padding-16"><b>5</b> Projects</li>
           <li class="w3-padding-16"><b>10-15</b> Students per Class</li>
           <li class="w3-light-grey">
-            <a target="_blank"
-              href="/assets/pdf/Intro_to_Java_Syllabus.pdf">
+            <a target="_blank" href="/assets/pdf/Intro_to_Java_Syllabus.pdf">
               <button class="coursebutton">Course Curriculum and Syllabus</button>
             </a>
           </li>
@@ -226,8 +288,9 @@
         <br><br><br>
         <div class="w3-ul w3-white w3-center coursehelp" data-aos="fade-left">
           <img src="/assets/img/Gift.png">
-          <p>Don't have the resources to sign up for a course? Reach out to <a target="_blank" href="mailto:contact@academiaedge.com"
-              style="color: #4a9cff;">contact@academiaedge.com</a> and we will try our best to help. AcademiaEdge
+          <p>Don't have the resources to sign up for a course? Reach out to <a target="_blank"
+              href="mailto:contact@academiaedge.com" style="color: #4a9cff;">contact@academiaedge.com</a> and we will
+            try our best to help. AcademiaEdge
             pledges to fight against Nation-Wide Income Inequality.</p>
         </div>
       </div>
@@ -240,7 +303,7 @@
       </div>
       <div class="row" data-aos="fade-left">
 
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-sm-6 ">
           <div class="about-content mt-50 wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="/assets/img/profilepic/shivaprofilepic.png" class="img-fluid"
@@ -249,15 +312,44 @@
                 <h4>Shiva Oswal</h4><span>Lead Teacher</span>
                 <div class="social">
                   <a target="_blank" href="mailto:shivarasul@gmail.com"><i class="fa fa-envelope"></i></a>
-                  <a target="_blank" href="https://github.com/Agnimandur"><i
-                      class="fa fa-github"></i></a>
+                  <a target="_blank" href="https://github.com/Agnimandur"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-sm-6 ">
+          <div class="about-content mt-50 wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="/assets/img/profilepic/aryaanprofilepic.png" class="img-fluid"
+                  alt="Aryaan profilepic"></div>
+              <div class="member-info">
+                <h4>Aryaan Singh</h4><span>Lead Teacher</span>
+                <div class="social">
+                  <a target="_blank" href="mailto:aryaans13@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 ">
+          <div class="about-content mt-50 wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="/assets/img/profilepic/estrellaprofilepic.jpeg" class="img-fluid"
+                  alt="Estrella profilepic"></div>
+              <div class="member-info">
+                <h4>Estrella Popoca</h4><span>Lead Teacher</span>
+                <div class="social">
+                  <a target="_blank" href="mailto:elliepopoca@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 ">
           <div class="about-content mt-50 wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="/assets/img/profilepic/ericprofilepic.png" class="img-fluid"
@@ -266,8 +358,7 @@
                 <h4>Eric Guo</h4><span>Assistant Teacher</span>
                 <div class="social">
                   <a target="_blank" href="mailto:ericguo0929@gmail.com"><i class="fa fa-envelope"></i></a>
-                  <a target="_blank" href="https://github.com/EricGuo0929"><i
-                      class="fa fa-github"></i></a>
+                  <a target="_blank" href="https://github.com/EricGuo0929"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
