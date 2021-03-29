@@ -676,7 +676,7 @@ body, html {
 }
 .breakdown {
   display:none;
-  margin-bottom:0px;
+  margin-bottom:30px;
 }
 .breakdown li {
   color:black;
@@ -2118,7 +2118,7 @@ Courses--------------
   max-height:  410px;
   position:relative;
 }
-.coursetag {
+.coursetagGreen {
   position:absolute;
   z-index:2;
   top:0;
@@ -2127,6 +2127,17 @@ Courses--------------
   background-color:rgb(75, 232, 176,0.9);
   font-size:30px;
   color:white;
+  text-transform: uppercase;
+}
+.coursetagYellow {
+  position:absolute;
+  z-index:2;
+  top:0;
+  left:0;
+  right:0;
+  background-color:rgb(255,255,153,0.9);
+  font-size:30px;
+  color:#4a9cff;
   text-transform: uppercase;
 }
 
