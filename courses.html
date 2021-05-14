@@ -60,7 +60,7 @@
 
 </head>
 
-<body style="margin-bottom: -25%;">
+<body>
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9091447.js"></script>
   <!-- End of HubSpot Embed Code -->
@@ -146,6 +146,7 @@
           <but class="profilebutton" onclick="filterSelection('javascript')">JavaScript</but>
           <but class="profilebutton" onclick="filterSelection('rust')"> Rust</but>
           <but class="profilebutton" onclick="filterSelection('Java')"> Java</but>
+          <but class="profilebutton" onclick="filterSelection('cplusplus')"> C++</but>
           <but class="profilebutton" onclick="filterSelection('Go')"> Go</but>
           <but class="profilebutton" onclick="filterSelection('gamedev')"> Game Development</but>
           <but class="profilebutton" onclick="filterSelection('csharp')"> C#</but>
@@ -228,22 +229,6 @@
           </div>
         </div>
 
-        <!--<div class="coursegriditem python">
-        <div class="member">
-          <div class="pic">
-            <div class="coursetag">Coming soon!</div>
-            <img src="assets/img/courseimg/ml.jpg" class="img-fluid" style="margin-bottom:20%;" alt="Python machine learning">
-          </div>
-          <div class="member-info">
-            <h4>Programming through Python: Machine Learning</h4>
-            <span>Lead Teacher: Michael Steinberg</span>
-            <div class="social">
-              <a target="https://forms.gle/QH2eLyAonGDo5A4p6" href="https://forms.gle/QH2eLyAonGDo5A4p6"><button class="button button1">Waitlist</button></a>
-            </div>
-          </div>
-        </div>
-      </div>-->
-
         <div class="coursegriditem python">
           <div class="member">
             <div class="pic">
@@ -289,7 +274,7 @@
         </div>
 
         <!-- Fill in correct link and photo info -->
-        <div class="coursegriditem accepting Java">
+        <div class="coursegriditem Java">
           <div class="member">
             <div class="pic">
               <img src="assets/img/courseimg/javacourse.svg" class="img-fluid" style="margin-bottom:20%;"
@@ -315,6 +300,21 @@
               <h4>Competitive Programming with Java</h4>
               <div class="social">
                 <a href="courses/javacomp.html"><button class="button button1">Learn More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coursegriditem accepting cplusplus">
+          <div class="member">
+            <div class="pic">
+              <img src="assets/img/courseimg/placeholder.png" class="img-fluid" style="margin-bottom:20%;"
+                alt="C++ course image">
+            </div>
+            <div class="member-info">
+              <h4>Introduction to C++</h4>
+              <div class="social">
+                <a href="courses/cplusplusintro.html"><button class="button button1">Learn More</button></a>
               </div>
             </div>
           </div>
@@ -353,6 +353,7 @@
             </div>
           </div>
         </div>
+
         <div class="coursegriditem csharp">
           <div class="member">
             <div class="pic">
@@ -369,14 +370,21 @@
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+    <!--this code here is so that the dropdown isn't covered up when div class="coursegrid" has a small height ???-->
+    <!--<div style="height:100px;z-index:4;text-align:center;background-color:aqua">sup <br>sup <br>sup <br>sup <br>sup <br>sup <br>sup <br></div>-->
+
   </section>
+
 
   <!-- ======= sciovirtual courses ======= -->
   <!--all images 506 by 337 px-->
 
-  <section id="founders" class="team pt-110" style="margin-bottom: 1%; margin-top: -5%;">
+  <section id="founders" class="team" style="margin-top:0;padding-top:10px;">
 
-    <div class="w3-row" style="margin-left: 4%; margin-right: 4%;">
+    <div class="w3-row" style="margin-left: 4%; margin-right: 4%;margin-top:0px;">
 
       <div class="section-titlebtnbelow">
         <h2>ScioVirtual</h2>
